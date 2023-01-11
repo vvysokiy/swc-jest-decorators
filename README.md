@@ -1,11 +1,29 @@
 # swc-jest-decorators
 
-Если `"decorators": true` и установлен `@swc/helpers`, то все работает.
+## Установка
+
+1. `npm install`
+2. `npm run test`
+
+## Кейсы
+
+Если `"decorators": true`, установлен `@swc/helpers` и отключен `@effector/swc-plugin`, то все работает.
 
 ```
  PASS  tests/test.spec.ts
   describe
     ✓ test (1 ms)
+```
+
+Подключение `@effector/swc-plugin` (раскомментировать в `.swcrc`)
+
+```
+ FAIL  tests/test.spec.tsrc/source_map.rs:1086:17
+  ● Test suite failed to run
+
+    failed to handle: position 0 does not resolve to a source location
+
+      at Compiler.transformSync (node_modules/@swc/core/index.js:241:29)
 ```
 
 Если нет `@swc/helpers`:
