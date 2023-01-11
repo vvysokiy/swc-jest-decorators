@@ -52,7 +52,7 @@ Caused by:
       at Compiler.transformSync (node_modules/@swc/core/index.js:241:29)
 ```
 
-If there is no `@swc/helpers`
+- If there is no `@swc/helpers`
 
 ```
  FAIL  tests/test1.spec.ts
@@ -70,7 +70,7 @@ If there is no `@swc/helpers`
       at Object.Test (tests/test1.spec.ts:4:14)
 ```
 
-If `"decorators": false`:
+- If `"decorators": false`:
 
 ```
  FAIL  tests/test1.spec.ts
