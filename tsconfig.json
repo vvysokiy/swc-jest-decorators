@@ -1,0 +1,25 @@
+{
+  // Config for ESLint
+  "compilerOptions": {
+    "lib": ["es2017", "es2019"],
+    "module": "ESNext",
+    "declaration": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": true,
+    "sourceMap": false,
+    "removeComments": true,
+    "strictBindCallApply": true,
+    "noLib": false,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true
+  }
+}

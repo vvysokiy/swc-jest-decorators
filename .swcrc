@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "sourceMaps": true,
+  "jsc": {
+    "target": "es2020",
+    "loose": true,
+    "externalHelpers": true,
+    "keepClassNames": false,
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true,
+      "react": {
+        "runtime": "automatic"
+      }
+    },
+    "minify": {
+      "mangle": false,
+      "compress": false
+    }
+  },
+  "minify": false,
+  "module": {
+    "type": "commonjs",
+    "strict": true,
+    "strictMode": true,
+    "lazy": true,
+    "noInterop": false
+  }
+}
