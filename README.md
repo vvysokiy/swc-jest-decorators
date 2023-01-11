@@ -1,13 +1,15 @@
 # swc-jest-decorators
 
-## Установка
+Example for https://github.com/effector/swc-plugin/issues/18
+
+## Install
 
 1. `npm install`
 2. `npm run test`
 
-## Кейсы
+## Cases
 
-Если `"decorators": true`, установлен `@swc/helpers` и отключен `@effector/swc-plugin`, то все работает.
+- If `"decorators": true`, `@swc/helpers` is set and `@effector/swc-plugin` is disabled, then everything works.
 
 ```
  PASS  tests/test.spec.ts
@@ -15,7 +17,7 @@
     ✓ test (1 ms)
 ```
 
-Подключение `"@effector/swc-plugin": "0.0.7"` (раскомментировать в `.swcrc`)
+- Plugin `"@effector/swc-plugin": "0.0.7"` (uncomment in `.swcrc`)
 
 ```
  FAIL  tests/test.spec.tsrc/source_map.rs:1086:17
@@ -26,7 +28,7 @@
       at Compiler.transformSync (node_modules/@swc/core/index.js:241:29)
 ```
 
-Подключение `"@effector/swc-plugin": "0.0.8"` (раскомментировать в `.swcrc`)
+- Plugin `"@effector/swc-plugin": "0.0.8"` (uncomment in `.swcrc`)
 
 ```
  RUNS  tests/test.spec.ts
@@ -50,7 +52,7 @@ Caused by:
       at Compiler.transformSync (node_modules/@swc/core/index.js:241:29)
 ```
 
-Если нет `@swc/helpers`:
+If there is no `@swc/helpers`
 
 ```
  FAIL  tests/test1.spec.ts
@@ -68,7 +70,7 @@ Caused by:
       at Object.Test (tests/test1.spec.ts:4:14)
 ```
 
-Если `"decorators": false`:
+If `"decorators": false`:
 
 ```
  FAIL  tests/test1.spec.ts
