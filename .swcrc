@@ -19,14 +19,14 @@
         "runtime": "automatic"
       }
     },
-    // "experimental": {
-    //   "plugins": [
-    //     [
-    //       "@effector/swc-plugin",
-    //       {}
-    //     ]
-    //   ]
-    // },
+    "experimental": {
+      "plugins": [
+        [
+          "@effector/swc-plugin",
+          {}
+        ]
+      ]
+    },
     "minify": {
       "mangle": false,
       "compress": false
