@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest --no-cache --verbose"
   },
+  "engines": {
+    "node": "18.12.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vvysokiy/swc-jest-decorators.git"
