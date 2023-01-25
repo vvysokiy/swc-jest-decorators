@@ -1,7 +1,7 @@
-// import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
-// @Injectable()
-// export class Test {}
+@Injectable()
+export class Test {}
 
 describe('describe', () => {
   test('test', () => {
